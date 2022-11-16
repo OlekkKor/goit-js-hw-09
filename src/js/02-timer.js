@@ -46,6 +46,10 @@ function startCalculate(e){
 
   const date = convertMs(different);
 
+  if (different < 0){
+    return 0;
+  }
+
   console.log();
   Object.entries(date).forEach(([ name, value ], i) => {
     // let num = value.toString().padStart(2, "0");;
